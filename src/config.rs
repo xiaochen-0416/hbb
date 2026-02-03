@@ -1813,10 +1813,10 @@ impl LocalConfig {
         let mut config = Config::load_::<LocalConfig>("_local");
     }
 let mut store = false;
-            if !config.options.contains_key("enable-check-update") {
-        config.options.insert("enable-check-update".to_string(), "N".to_string());
-        store = true;
-        }
+            if !config.options。contains_key("enable-ipv6-punch") {
+                config.options.insert("enable-ipv6-punch".to_string(), "Y".to_string());
+                store = true;
+}
 
     fn store(&self) {
         Config::store_(self, "_local");
